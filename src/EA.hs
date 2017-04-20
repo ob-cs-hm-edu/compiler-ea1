@@ -39,4 +39,3 @@ accept word =
   case foldl sigma start word of
     s | s `elem` sAccept -> True
     _ -> False
-

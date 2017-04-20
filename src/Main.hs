@@ -1,8 +1,8 @@
 module Main where
 
-import System.IO (hSetBuffering, BufferMode(NoBuffering), stdout)
+import           System.IO (BufferMode (NoBuffering), hSetBuffering, stdout)
 
-import EA (accept)
+import           EA        (accept)
 
 main :: IO ()
 main = do
