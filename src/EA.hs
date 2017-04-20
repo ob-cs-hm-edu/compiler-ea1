@@ -35,7 +35,4 @@ sAccept :: [State]
 sAccept = [S3, S5, S10]
 
 accept :: String -> Bool
-accept word =
-  case foldl sigma start word of
-    s | s `elem` sAccept -> True
-    _ -> False
+accept word = foldl sigma start word `elem` sAccept
